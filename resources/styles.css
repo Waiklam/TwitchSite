@@ -1,0 +1,352 @@
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+body {
+    text-align: center;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    border-bottom: solid 1px black;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content li {
+    padding: 0 2rem;
+    font-size: 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+.content {
+    width: 100%;
+    padding: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    position: relative;
+    padding-right: 5rem;
+}
+
+a:hover {
+    opacity: 0.5;
+    transition-timing-function: 1s;
+}
+
+.leftside {
+    display: flex;
+    align-items: center;
+}
+
+.leftside img {
+    height: 4rem;
+    margin-right: 2rem;
+}
+
+@media only screen and (max-width: 1450px) {
+    .content {
+        padding: 2.5rem;
+        justify-content: space-around;
+    }
+    
+    .logo {
+        display: none;
+    }
+
+    .content nav {
+        padding: 0;
+    }
+
+    .content ul {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .content {
+        width: auto;
+    }
+
+    .leftside {
+        display: none;
+    }
+
+    .content nav {
+        width: 100%;
+        padding: 0;
+    }
+
+    .content ul {
+        flex: 1;
+        justify-content: space-around;
+    }
+    
+    .content li {
+        padding: .25rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .leftside {
+        display: block;
+    }
+
+    .content {
+        padding: 1.5rem;
+        justify-content: space-evenly;
+    }
+
+    .content ul {
+        flex-direction: column;
+    }
+
+    .leftside img {
+        height: 4rem;
+        margin-right: 0;
+    }
+
+    .content li {
+        padding: .25rem;
+        font-size: 1rem;
+    }
+
+    .content nav {
+        width: auto;
+    }
+}
+
+#main {
+    position: relative;
+    top: 9.1rem;
+    margin-bottom: 9rem;
+    padding: 10rem 5rem;
+    background-color: white;
+    border-bottom: solid 1px black;
+}
+
+#main .coolwords {
+    color: black;
+    text-shadow: .25rem .125rem 1px skyblue;
+    font-size: 5rem;
+    padding: 2rem 2rem 6rem;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 7rem;
+}
+
+#main .history {
+    color: black;
+    font-size: 2rem;
+    margin: 3rem 5%;
+    line-height: 1.5;
+}
+
+#main img {
+    height: 600px;
+    width: 30%;
+    padding-top: 2rem;
+    object-fit: cover;
+}
+
+#main #about {
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1450px) {
+    #main .history {
+        color: black;
+        font-size: 1.25rem;
+        margin: 3rem 5%;
+        line-height: 1.5;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    #main {
+        background-color: lightgray;
+    }
+    
+    #main img {
+        display: none;
+    }
+
+    #main .coolwords {
+        color: black;
+        text-shadow: .25rem .125rem 1px skyblue;
+        font-size: 3rem;
+        padding: 2rem 2rem 6rem;
+        font-weight: bold;
+        font-style: italic;
+        line-height: 4rem;
+    }
+
+    #main .history {
+        color: black;
+        font-size: 1rem;
+        margin: 3rem 5%;
+        line-height: 1.25;
+    }
+}
+
+.title {
+    position: relative;
+    font-size: 6rem;
+    font-weight: bold;
+    padding: 6rem 0 6rem;
+    background-color: white;
+}
+
+#games {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    background-image: url(../resources/images/game-background.jpg);
+    background-size: cover;
+    padding-bottom: 10rem;
+}
+
+#games .game {
+    background-color: white;
+    margin: 6rem 2rem 2rem;
+    padding-bottom: 5rem;
+}
+
+#games .game img {
+    display: block;
+    width: 450px;
+    height: 675px;
+    object-fit: fill;
+}
+
+#games .game .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#games .streamer .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-evenly;
+}
+
+#games .streamer {
+    background-color: white;
+    margin: 6rem 2rem 2rem;
+    padding-bottom: 5rem;
+}
+
+#games .game h3 {
+    margin: 10% 0 5%;
+    width: 400px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#games .streamer h3 {
+    margin: 10% 0 5%;
+    width: 400px;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#games .game p {
+    width: 350px;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    padding-top: 1rem;
+}
+
+#games .streamer p {
+    width: 350px;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    padding-top: 1rem;
+}
+
+@media only screen and (max-width: 1044px) {
+    #games .game {
+        padding-bottom: 0;
+    }
+
+    #games .game h3 {
+        display: none;
+    }
+
+    #games .game p {
+        display: none;
+    }
+
+    #games .streamer {
+        padding-bottom: 5rem;
+    }
+
+    #games .streamer h3 {
+        margin: 10% 0 5%;
+        width: 400px;
+        font-size: 3rem;
+        font-weight: bolder;
+        text-align: center;
+    }
+    
+    #games .game p {
+        width: 350px;
+        font-size: 1.25rem;
+        line-height: 1.25;
+        padding-top: 1rem;
+    }
+}
+
+#games .streamer img {
+    display: block;
+    width: 400px;
+    height: 400px;
+    object-fit: fill;
+}
+
+#games .streamer {
+    background-color: white;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
+    border-radius: 25px;
+}
+
+#games .stream {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    background-image: url(../resources/images/stream-setup.jpg);
+    background-size: cover;
+    padding-bottom: 10rem;
+}
